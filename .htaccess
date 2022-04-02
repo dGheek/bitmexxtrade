@@ -1,0 +1,15 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://bitmexxtrade.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://bitmexxtrade.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.bitmexxtrade.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.bitmexxtrade.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://bitmexxtrade.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://bitmexxtrade.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.bitmexxtrade.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.bitmexxtrade.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
